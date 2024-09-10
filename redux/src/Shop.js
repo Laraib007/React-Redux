@@ -3,9 +3,10 @@ import React from 'react'
 const Shop = () => {
   return (
     <div>
-      <buttton>+</buttton>
+        <h4>Your Shop</h4>
+      <button type="button" class="mx-2 btn btn-primary">-</button>
       Your Item Added
-      <buttton>-</buttton>
+      <button type="button" class=" mx-2 btn btn-primary">+</button>
     </div>
   )
 }

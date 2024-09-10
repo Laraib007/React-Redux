@@ -1,7 +1,8 @@
-export default reducer =(state=0, action)=>{
+const reducer =(state=0, action)=>{
     if(action.type === "deposite"){
         return state + action.payload
     }else if(action.type === "withdraw"){
         return state - action.payload
     }
 }
+export default reducer;

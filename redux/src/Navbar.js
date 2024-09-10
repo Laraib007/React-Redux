@@ -18,6 +18,7 @@ const Navbar = () => {
           <a class="nav-link" href="#">Link</a>
         </li>   
         </ul>
+        
         <button disabled={true} type="button" class="btn btn-primary">Your Balance: 10000</button>
     </div>
   </div>

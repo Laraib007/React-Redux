@@ -1,7 +1,19 @@
-import redux from "redux"
+import {createStore} from "redux"
 
-const store = ()=>{
-    console.log(redux)
-    return
+const shopReducer = (state ={soap: 11}, action)=>{
+ if(action.type === "SELL_SOAP"){
+    return {
+        soap: state.soap - 1
+    }
+ }
+ if(action.type === "BUY_SOAP"){
+    return {
+        soap: state.soap + action.payload
+    }
+ }
+ return state
 }
-store()
+
+
+const store = createStore(shopReducer)
+export default store;
